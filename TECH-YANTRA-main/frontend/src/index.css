@@ -1,0 +1,73 @@
+@import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@900,800,700,600,500,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 7%;
+    --card: 0 0% 100%; --card-foreground: 0 0% 7%;
+    --popover: 0 0% 100%; --popover-foreground: 0 0% 7%;
+    --primary: 0 76% 56%; --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%; --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96%; --muted-foreground: 0 0% 40%;
+    --accent: 0 0% 96%; --accent-foreground: 0 0% 9%;
+    --destructive: 0 84% 60%; --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 90%; --input: 0 0% 92%; --ring: 0 76% 56%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 0 0% 7%; --foreground: 0 0% 96%;
+    --card: 0 0% 9%; --card-foreground: 0 0% 96%;
+    --popover: 0 0% 9%; --popover-foreground: 0 0% 96%;
+    --primary: 0 76% 56%; --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 12%; --secondary-foreground: 0 0% 96%;
+    --muted: 0 0% 12%; --muted-foreground: 0 0% 60%;
+    --accent: 0 0% 12%; --accent-foreground: 0 0% 96%;
+    --destructive: 0 62% 30%; --destructive-foreground: 0 0% 96%;
+    --border: 0 0% 16%; --input: 0 0% 16%; --ring: 0 76% 56%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Cabinet Grotesk', -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.65;
+    letter-spacing: -0.005em;
+  }
+  ::selection { background: #E53935; color: white; }
+  h1, h2, h3, h4 { letter-spacing: -0.025em; line-height: 1.1; }
+  p { line-height: 1.7; }
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: hsl(var(--border)); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #E53935; }
+
+/* Flatten previously-fancy utilities — no glass, no gradients, no orbs */
+.glass-dark, .glass-light { background: hsl(var(--card)); border: 1px solid hsl(var(--border)); backdrop-filter: none; }
+.hero-glow { background: transparent; }
+.grain::before { display: none; }
+.beam-border::before { display: none; }
+.beam-border { border: 1px solid hsl(var(--border)); }
+.text-gradient { background: none; -webkit-background-clip: initial; background-clip: initial; color: inherit; }
+.particle { display: none; }
+.marquee-track { display: flex; width: max-content; animation: marquee 40s linear infinite; }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.animate-float-slow, .animate-glow { animation: none; }
+
+.font-display, .font-mono { font-family: 'Cabinet Grotesk', sans-serif; letter-spacing: -0.015em; }
+
+.btn-primary { transition: opacity 0.2s; }
+.btn-primary:hover { opacity: 0.9; }
+.btn-primary::after { display: none; }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }

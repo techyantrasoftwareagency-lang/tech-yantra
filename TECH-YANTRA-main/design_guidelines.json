@@ -1,0 +1,103 @@
+{
+  "project_name": "Tech Yantra Software Agency",
+  "brand": {
+    "name": "Tech Yantra Software Agency",
+    "tagline": "Engineering Ideas Into Intelligent Software",
+    "theme_preference": "Dark (Primary) with Light Mode Toggle",
+    "archetype": "Archetype 4 (Swiss & High-Contrast) + Archetype 5 (Luxury)"
+  },
+  "typography": {
+    "guidelines": "No Inter or Space Grotesk. Use fluid typography scales and generous line heights.",
+    "font_families": {
+      "headings": "'Cabinet Grotesk', sans-serif",
+      "body": "'Satoshi', sans-serif",
+      "mono": "'JetBrains Mono', monospace"
+    },
+    "scales": {
+      "h1": "text-5xl md:text-6xl tracking-tighter font-black",
+      "h2": "text-4xl md:text-5xl tracking-tight font-bold",
+      "h3": "text-2xl md:text-3xl tracking-tight font-semibold",
+      "body": "text-base md:text-lg leading-relaxed font-normal text-white/80",
+      "labels": "text-xs uppercase tracking-[0.2em] font-bold"
+    }
+  },
+  "color_palette": {
+    "dark": {
+      "background": "#111111",
+      "surface": "#2B2B2B",
+      "surface_glass": "rgba(43, 43, 43, 0.4)",
+      "primary": "#E53935",
+      "primary_hover": "#F05654",
+      "text_primary": "#FFFFFF",
+      "text_secondary": "#A1A1AA",
+      "border": "rgba(255, 255, 255, 0.1)"
+    },
+    "light": {
+      "background": "#F8F9FA",
+      "surface": "#FFFFFF",
+      "surface_glass": "rgba(255, 255, 255, 0.7)",
+      "primary": "#E53935",
+      "primary_hover": "#C62828",
+      "text_primary": "#111111",
+      "text_secondary": "#4B5563",
+      "border": "rgba(17, 17, 17, 0.1)"
+    }
+  },
+  "design_system": {
+    "glassmorphism": {
+      "dark_mode": "bg-[#2B2B2B]/40 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)] backdrop-saturate-150",
+      "light_mode": "bg-white/70 backdrop-blur-xl border border-black/5 shadow-sm backdrop-saturate-150"
+    },
+    "tracing_beam": "relative rounded-xl overflow-hidden before:absolute before:inset-0 before:p-[1px] before:bg-gradient-to-r before:from-[#E53935] before:to-transparent before:rounded-xl before:-z-10",
+    "spacing": "Generous Spacing: p-8, p-12, py-24. Containers with borders must have internal padding. Use gap-8 to gap-12 for bento grids.",
+    "alignment": "Optical alignment. Left-align dense content, forms, and hero text. Center headings only when it improves visual balance.",
+    "testing": "All interactive elements MUST include data-testid attribute in kebab-case."
+  },
+  "content_requirements": {
+    "about_stats": ["100+ Projects", "Fast Delivery", "Modern Tech", "E2E Support"],
+    "process_steps": ["Discovery", "Strategy", "Design", "Development", "Testing", "Deployment", "Support"],
+    "technologies": ["React", "Next.js", "Flutter", "Node.js", "Express", "MongoDB", "Firebase", "AWS", "Docker", "Python", "OpenAI", "TensorFlow", "PostgreSQL", "GitHub"],
+    "why_choose_us": ["Modern UI", "Clean Code", "Secure Architecture", "Fast Performance", "SEO", "AI Powered", "24/7 Support", "Affordable Pricing"],
+    "pricing_tiers": ["Starter", "Business", "Enterprise"]
+  },
+  "layout_guidance": {
+    "hero": "Left-aligned asymmetric layout. Text (col-span-5) with massive typography. Right side (col-span-7) for 3D futuristic illustration, glowing red gradients, and floating particles (react-tsparticles).",
+    "about": "Bento Grid Mode A (Tetris Grid). grid-cols-1 md:grid-cols-12. Prominent typography for stats spanning larger cells.",
+    "services": "Grid layout: grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6. 12 service cards using crystal glassmorphism and subtle #E53935 hover rings.",
+    "process": "7-step timeline. Vertical scroll or horizontal track with animated active glowing red nodes. Hovering triggers opacity shift.",
+    "portfolio": "Tetris grid with visual tension. col-span-8 and col-span-4 mix. Image overlay max bg-black/40. Categories filter. Click opens Shadcn Dialog modal.",
+    "tech_slider": "react-fast-marquee. Monochrome gray logos that transition to pure white or color on hover. Use react-icons for all 14 logos.",
+    "why_choose_us": "8-card grid. Flat #2B2B2B surface, 1px border. Iconoir/Lucide icons. Hover lifts element and casts crimson ambient shadow.",
+    "testimonials": "Swiper carousel. Large bold quotes. Star ratings using lucide-react.",
+    "pricing": "3 tiers. Center 'Business' tier visually elevated via scale-105 and 'Tracing Beam' red gradient border.",
+    "contact": "Left: Shadcn Form with inputs for Name, Email, Phone, Company, Budget, Project Type, Message. Right: Google Map embed. Global: Floating WhatsApp button.",
+    "footer": "Massive padding py-32. Top for newsletter input. Large brand text overlay. Clean minimalist links.",
+    "dashboards": {
+      "layout": "Control Room Grid (Mode B). Dense, functional, minimal animation. Left sidebar navigation.",
+      "components": "Go cardless or flat 1px border. No glassmorphism in dashboard to prevent data refraction. Use Shadcn Table, Chart, Dialog."
+    },
+    "additional_pages": "Blog (List + Detail), Careers (Job Listings), Auth (Login/Register) utilizing glassmorphism cards."
+  },
+  "motion_specs": {
+    "engine": "framer-motion and gsap",
+    "effects": {
+      "cursor": "Custom dot + ring cursor, expands on hoverable items.",
+      "buttons": "Ripple effect on click, scale 1.02 on hover.",
+      "scroll": "Staggered fade-up (whileInView) for grid children.",
+      "particles": "react-tsparticles for background depth in Hero."
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_illustration": "https://images.unsplash.com/photo-1624533358643-7336036c9482?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMHJlZCUyMGRhcmslMjB0ZWNobm9sb2d5fGVufDB8fHx8MTc4Mjc0MTc2N3ww&ixlib=rb-4.1.0&q=85",
+      "portfolio_1": "https://images.pexels.com/photos/27141307/pexels-photo-27141307.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "portfolio_2": "https://images.pexels.com/photos/27141316/pexels-photo-27141316.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "abstract_texture": "https://images.unsplash.com/photo-1708457753320-02e52a276a80?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMHJlZCUyMGRhcmslMjB0ZWNobm9sb2d5fGVufDB8fHx8MTc4Mjc0MTc2N3ww&ixlib=rb-4.1.0&q=85"
+    },
+    "fonts_cdn": [
+      "https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@900,800,700,500,400&f[]=satoshi@900,700,500,400&display=swap",
+      "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
+    ]
+  },
+  "instructions_to_main_agent": "Ensure you build in .js (React) not .tsx. Combine Tailwind with pure HTML structure for marketing pages to maintain flexibility, avoiding rigid Shadcn layouts for creative sections. Shadcn components should primarily be used for interactive elements (Forms, Modals, Accordions, Dropdowns) and heavily customized to match the Dark/Red premium theme. Dashboards should be strictly functional."
+}

@@ -1,0 +1,18 @@
+{
+  "summary": "Smoke-tested logo swap. Both navbar + footer use the NEW blfynx5s emblem asset; old h1jn7ocg URL is gone; image loads with HTTP 200 and naturalWidth=1536; homepage hero CTA still present (no regression).",
+  "tested_scope": ["frontend"],
+  "passed": [
+    "2 elements with data-testid=brand-logo found (navbar + footer)",
+    "Both <img> src contains 'blfynx5s' (new emblem URL)",
+    "Logo image loaded successfully: naturalWidth=1536, naturalHeight=1024",
+    "Direct HTTP fetch of new asset returns status 200",
+    "Old logo URL 'h1jn7ocg' NOT present anywhere in rendered DOM",
+    "Homepage loads without errors; hero-cta-consult button is present",
+    "Visual: red Y emblem renders cleanly next to 'TECH YANTRA' wordmark in navbar"
+  ],
+  "failed": [],
+  "action_items": [],
+  "success_rate": {"backend": "n/a (not in scope)", "frontend": "100%"},
+  "retest_needed": false,
+  "full_testing_deferred": true
+}

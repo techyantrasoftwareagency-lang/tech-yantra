@@ -1,0 +1,18 @@
+{
+  "summary": "Smoke test confirmed removal of TECH YANTRA wordmark from Navbar and Footer logo blocks. Only the emblem image remains in both places. Logo image loads from blfynx5s asset URL. No regression on hero CTA.",
+  "tested_scope": ["frontend"],
+  "passed": [
+    "Navbar logo-link inner text is empty (no 'TECH YANTRA'/'Software Agency' text)",
+    "Navbar brand-logo image present and loaded (naturalWidth=1536)",
+    "Footer top logo wrapper inner text is empty (no wordmark)",
+    "Footer brand-logo image present",
+    "Logo image src uses blfynx5s asset URL",
+    "hero-cta-consult button still present and visible on /"
+  ],
+  "failed": [],
+  "action_items": [],
+  "success_rate": {"backend": "N/A", "frontend": "100%"},
+  "retest_needed": false,
+  "full_testing_deferred": true,
+  "notes": "Footer bottom copyright line still contains 'Tech Yantra Software Agency' text — this is the legal copyright, not the logo wordmark, and was not part of the removal scope."
+}

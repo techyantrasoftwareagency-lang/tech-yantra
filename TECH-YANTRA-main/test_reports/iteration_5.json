@@ -1,0 +1,19 @@
+{
+  "summary": "Smoke test for new Y-emblem logo swap. Navbar + Footer both render the new 'zokqsahi' asset; old 'blfynx5s' fully removed. Asset loads (HTTP 200, natW=1254), visible, mixBlendMode=multiply applied. Hero CTAs intact (hero-cta-consult, hero-cta-work). No console/page errors.",
+  "tested_scope": ["frontend", "integration"],
+  "passed": [
+    "Found 2 [data-testid=brand-logo] elements (navbar + footer)",
+    "DOM contains new marker 'zokqsahi'",
+    "DOM does NOT contain old marker 'blfynx5s'",
+    "Logo image complete=True, naturalWidth=1254, visible=True",
+    "Logo asset GET returns HTTP 200",
+    "Computed mixBlendMode = 'multiply' on dark theme",
+    "Homepage hero CTAs present (Get Free Consultation, View Our Work)",
+    "No .error/[class*=error] elements present on page"
+  ],
+  "failed": [],
+  "action_items": [],
+  "success_rate": {"backend": "n/a", "frontend": "100%"},
+  "retest_needed": false,
+  "full_testing_deferred": true
+}

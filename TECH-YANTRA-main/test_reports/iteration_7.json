@@ -1,0 +1,17 @@
+{
+  "summary": "Frontend smoke test for restored marquee animation on homepage 'Our Stack' section. Homepage loads cleanly, 'Our Stack' section renders, .marquee-track has animation-name='marquee' (40s, running) and transform changes over time confirming active scrolling. Hero CTAs hero-cta-consult and hero-cta-work present and visible — no regression.",
+  "tested_scope": ["frontend"],
+  "passed": [
+    "Homepage / loads via REACT_APP_BACKEND_URL",
+    "'Our Stack' section present and scrolled into view",
+    ".marquee-track computed animation-name = 'marquee' (not 'none'), duration 40s, play-state running",
+    "Transform value changes between two samples (matrix tx -64.84 -> -108.07) confirming active scroll",
+    "hero-cta-consult present and visible",
+    "hero-cta-work present and visible"
+  ],
+  "failed": [],
+  "action_items": [],
+  "success_rate": {"backend": "n/a", "frontend": "100%"},
+  "retest_needed": false,
+  "full_testing_deferred": true
+}
